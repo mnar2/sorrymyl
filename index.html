@@ -74,7 +74,7 @@
     }).reduce((a, b) => {
         return a + b;
     }))
-    $("").html(`${config.names[0]}<span class="STYLE1"></span> ${config.names[1]}<span class="STYLE1"></span>`)
+    $("#clock-box-inside-text").html(`${config.names[0]}<span class="STYLE1">与</span> ${config.names[1]}<span class="STYLE1">已经相恋了</span>`)
 </script>
 
 <script>
@@ -207,10 +207,10 @@
         }));
 
         var textAnimate = eval(Jscex.compile("async", function () {
-            var together = new ;
+            var together = new Date(config.date);
 
             $("#code").show().typewriter();
-            $("#clock-box").fadeIn(500);
+            $("").fadeIn(500);
             while (true) {
                 timeElapse(together);
                 $await(Jscex.Async.sleep(1000));
