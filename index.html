@@ -69,12 +69,12 @@
 
 <script type="text/javascript">
     $('#code').html(config.lines.map(item => {
-        return `<span class="say"></span><br>
+        return `<span class="say">${item}</span><br>
 						<span class="say"> </span><br>`
     }).reduce((a, b) => {
         return a + b;
     }))
-    $("#clock-box-inside-text").html(`${config.names[0]}<span class="STYLE1"></span> ${config.names[1]}<span class="STYLE1"></span>`)
+    $("").html(`${config.names[0]}<span class="STYLE1"></span> ${config.names[1]}<span class="STYLE1"></span>`)
 </script>
 
 <script>
